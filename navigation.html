@@ -1,0 +1,21 @@
+<header>
+  <h1>Taratip Jaikaeo</h1>
+  <a href="Javascript:void(0)" class="button-menu" onclick="menu_open()"><i class="fas fa-bars fa-2x"></i></a>
+</header>
+<nav class="light-grey">
+  <a href="index.html">Coding Temple</a>
+  <a href="learn_html.html">Learn HTML</a>
+  <a href="learn_css.html">Learn CSS</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<div id="sidebar-menu">
+  <h3><b>Taratip Jaikaeo</b></h3>
+  <a href="index.html" onclick="menu_close()">Coding Temple</a>
+  <a href="learn_html.html" onclick="menu_close()">Learn HTML</a>
+  <a href="learn_css.html" onclick="menu_close()">Learn CSS</a>
+  <a href="contact.html" onclick="menu_close()">Contact</a>
+</div>
+
+<!-- overlay effect -->
+<div class="overlay animate-opacity" onclick="menu_close()" style="cursor:pointer" title="close side menu" id="menu-overlay">
+</div>
