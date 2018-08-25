@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: white;
+  font-family: "Raleway", sans-serif;
+}
+
+header > h1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+a.navbar-brand {
+  padding: 13px 16px 13px 16px;
+  margin-right: 0;
+}
+
+a.nav-link {
+  padding: 15px 8px 15px 8px;
+}
+
+a.navbar-brand.d-lg-inline-block.d-none:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+article, .custom-container {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+span.opacity {
+  opacity: 0.5;
+}
+
+.center {
+  display: block;
+  margin: 20px auto;
+}
+
+.btn-outline-primary {
+  border-color: #008CBA;
+  color: #008CBA;
+  float: right;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #008CBA;
+}
+
+div.card {
+  margin: 20px 20px 20px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill-title {
+  margin-bottom: 5px;
+  margin-top: 16px;
+}
+
+.light-grey {
+  background-color: #f1f1f1;
+}
+
+.teal {
+  background-color: #008CBA;
+  color: #fff;
+}
+
+.round-xlarge {
+  border-radius: 16px;
+}
+
+.padding {
+  padding: 5px;
+}
+
+.text-small {
+  font-size: 0.75rem;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.icon-b {
+  color: #008CBA;
+}
+
+.portfolio {
+  heigth: 500px;
+}
+/**** For devices smaller than 640px ****/
+@media all and (max-width: 768px) {
+  header > h1 {
+    display: none;
+  }
+
+  a.navbar-brand {
+    padding-left: 16px;
+    margin-right: 16px;
+  }
+
+  li.nav-item a.nav-link {
+    padding: 8px 16px;
+  }
+
+  button.navbar-toggler {
+    margin: 6px 16px;
+  }
+
+  button.navbar-toggler:hover {
+    background-color: #ccc;
+    color: black;
+  }
+
+  .btn-outline-primary {
+    margin-top: 10px;
+    margin-bottom: 10px
+  }
+
+  div.card {
+    margin-left: 20px;
+  }
+}
