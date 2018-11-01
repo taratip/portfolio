@@ -11,7 +11,7 @@
   <!-- Font Raleway -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <!-- Font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <!-- main css -->
   <link rel="stylesheet" href="../static/css/main.css" type="text/css">
 </head>
@@ -44,21 +44,31 @@
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="custom-container">
-          <form>
-            <h2>Contact Me</h2>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="nane" name placeholder="Enter Name" required>
+          <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbznyi-HvGNscX4prXd6zLEIQkq_jmBGqWZvh6ArzQ/exec">
+            <label class="sr-only">Keep this field blank</label>
+            <input id="honeypot" type="text" name="honeypot" value="" />
+            <div class="form-elements">
+              <h2>Contact Me</h2>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="nane" name="name" placeholder="Enter Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block teal">Send Message</button>
             </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+
+            <!-- Thank you message -->
+            <div class="thankyou_message" style="display:none;">
+              <h3><em>Thanks</em> for contacting me!
+                I will get back to you soon!</h3>
             </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block teal">Send Message</button>
           </form>
         </div> <!-- Ending div for custom container -->
       </div> <!-- Ending div for column -->
@@ -69,5 +79,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script data-cfasync="false" type="text/javascript" src="../static/js/form-submission-handler.js"></script>
 </body>
 </html>

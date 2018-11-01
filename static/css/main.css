@@ -44,6 +44,7 @@ span.opacity {
 .center {
   display: block;
   margin: 20px auto;
+  object-fit: cover;
 }
 
 .btn-outline-primary {
@@ -54,8 +55,20 @@ span.opacity {
   margin-top: 30px;
 }
 
-.btn-outline-primary:hover {
-  background-color: #008CBA;
+.btn-outline-primary:hover,
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: #00526E;
+  border-color: #00526E;
+}
+
+.btn-primary.teal {
+  border-color: #008CBA;
+}
+
+.btn-primary.teal:hover,
+.btn-primary.teal:not(:disabled):not(.disabled):active {
+  background-color: #00526E;
+  border-color: #00526E;
 }
 
 div.card {
@@ -93,6 +106,15 @@ a, a:hover {
   text-decoration: none;
 }
 
+a.external-link {
+  color: #008CBA;
+}
+
+a.external-link:hover {
+  color: #00526E;
+  font-weight: bolder;
+}
+
 .icon-b {
   color: #008CBA;
 }
@@ -100,6 +122,11 @@ a, a:hover {
 .portfolio {
   heigth: 500px;
 }
+
+#honeypot {
+  display: none;
+}
+
 /**** For devices smaller than 640px ****/
 @media all and (max-width: 768px) {
   header > h1 {
