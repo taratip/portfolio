@@ -127,6 +127,10 @@ a.external-link:hover {
   display: none;
 }
 
+/* .card-img-top {
+  object-fit: cover;
+} */
+
 /**** For devices smaller than 640px ****/
 @media all and (max-width: 768px) {
   header > h1 {
@@ -158,5 +162,10 @@ a.external-link:hover {
 
   div.card {
     margin-left: 20px;
+  }
+
+  .center {
+    max-width: 250px;
+    height: auto;
   }
 }
